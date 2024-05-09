@@ -1,0 +1,6 @@
+.category-card{
+    transition:all 0.6s ease,
+}
+.category-card:hover{
+transform: translateY(-10px)
+}

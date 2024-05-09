@@ -1,0 +1,30 @@
+/* body {
+  margin: 0;
+  padding: 0;
+}
+.inter-prj-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+** {
+  font-family: sans-serif;
+}*/
+:root {
+  --main-color: #a63fdc;
+  --bg-purple: #9a24c1;
+  --pp: #8e3a9d;
+  --bg-light: #fafafa;
+  --dark-purple: #7c3488;
+  --purple-gred: #5c127e;
+  --dark-blue: #21145c;
+  --text-color:#993eb6;
+  --bg-color:rgb(153, 62, 182,0.5);
+  --navy: #08011e;
+  --profile:#3d096e;
+  --gray-font: #777777;
+  --black-font: #232127;
+  --pp: #8e3a9d;
+}

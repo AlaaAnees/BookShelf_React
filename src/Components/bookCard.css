@@ -1,0 +1,31 @@
+.price {
+  color: #a757bf;
+  font-weight: bold;
+  border: 1px #8f8f8f solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.price:hover {
+  color: white;
+  background-color: #a757bf;
+  transform: scale(1.05);
+}
+
+.rating {
+  width: 50%;
+  height: 5%;
+  bottom: 33%;
+  display: flex;
+  justify-content: center;
+}
+.bookCard {
+  transition: all 0.8s ease;
+}
+.bookCard:hover {
+  border-radius: 20px;
+  border: 1px solid beige;
+
+  transform: translateY(-20px);
+  background-color: beige;
+}

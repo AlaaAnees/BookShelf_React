@@ -1,0 +1,13 @@
+.addEvent{
+    color:#7c3488;
+    /* --dark-purple: #7c3488; */
+  }
+  .chart-container {
+    border: none !important; 
+  }
+  .bg-purple {
+    background-color: var(--pp);
+  }
+  .bg-purple-ligth {
+    background-color: var(--dark-purple);
+  }

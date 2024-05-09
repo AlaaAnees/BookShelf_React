@@ -1,0 +1,186 @@
+/* library girl img */
+.imgContainer {
+  border-radius: 18px;
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imgs {
+  width: 90%;
+  height: 90%;
+  border-radius: 8px;
+}
+.headLine{
+
+  width: 90%;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* form */
+.registerForm {
+  padding: 0px 30px;
+  width: 52%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* inputs */
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs {
+  all: unset;
+  display: block;
+  height:35px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+
+}
+.imgUpload{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.inputs:focus {
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.62);
+  border-bottom: 2px solid #5c067f;
+  border-right: 2px solid #5c067f;
+  animation: letters 2s ease 0s 1 normal forwards;
+}
+
+/* labels */
+.labels {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+.error {
+  align-self: flex-start;
+  color: white;
+  font-size: 0.7rem;
+  filter: drop-shadow(2px 2px 4px rgb(255, 1, 1));
+  margin-top: 3px;
+}
+
+/* register btn  */
+.btnRegister {
+  all: unset;
+  animation: animate 8s linear infinite;
+  border: 1px solid rgb(83, 7, 104);
+  width: 30%;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #5b067d, #d8a2ea, rgb(194, 71, 246));
+  background-size: 400%;
+  border-radius: 30px !important;
+  opacity: 80%;
+  margin-top: 10px;
+  padding:5px 20px;
+}
+.btnRegisterDisabled{
+  all: unset;
+  border: 1px solid rgb(96, 95, 96);
+  width: 30%;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #423c44, #161217, rgb(8, 7, 9));
+  background-size: 400%;
+  border-radius: 30px !important;
+  opacity: 80%;
+  padding:5px 10px;
+  margin-top: 10px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .imgContainer{
+    display: none;
+  }
+  .btnRegister{
+    width: 90%;
+    height: 50px;
+  }
+  .btnRegisterDisabled{
+    width: 90%;
+    height: 50px;
+  }
+  .inputContainer{
+    width:100%
+  }
+  .registerForm{
+    width: 80%;
+  }}
+  @media  screen and (min-width:601px) and (max-width:768px){
+    .imgContainer{
+      width:50% ;
+      height:75% ;
+
+    }
+    .btnRegister{
+      width: 90%;
+      height: 50px;
+    }
+    .btnRegisterDisabled{
+      width: 90%;
+      height: 50px;
+    }
+    .inputContainer{
+      width:100%
+    }
+    .registerForm{
+      width: 50%;
+    }
+    
+  
+}
+@media  screen and (min-width:769px) and (max-width:1024px){
+  .imgContainer{
+    width:50% ;
+    height:75% ;
+  }
+  .btnRegister{
+    width: 90%;
+  }
+  .btnRegisterDisabled{
+    width: 90%;
+  }
+  .inputContainer{
+    width:100%
+  }
+  .registerForm{
+    width: 50%;
+  }
+  
+
+}

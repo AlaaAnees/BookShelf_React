@@ -1,0 +1,146 @@
+.imgContainer {
+  position: relative;
+  width: 48%;
+  height: 100%;
+  border-radius: 16px;
+  background-image: url("bookjump.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* form */
+.loginForm {
+  padding-top: 20px;
+  width: 52%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* inputs */
+.inputContainer {
+  width: 90%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs {
+  all: unset;
+
+  display: block;
+  height: 45px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.inputs:focus {
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.62);
+  border-bottom: 2px solid #5c067f;
+  border-right: 2px solid #5c067f;
+  animation: letters 2s ease 0s 1 normal forwards;
+}
+
+/* labels */
+.labels {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+/* login btn  */
+.btnLogin {
+  all: unset;
+  margin-bottom: 20px !important;
+  border: 1px solid rgb(83, 7, 104);
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  animation: animate 8s linear infinite;
+  color: #fff;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #5b067d, #d8a2ea, rgb(194, 71, 246));
+  background-size: 400%;
+  border-radius: 30px !important;
+  opacity: 80%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+/* error message */
+.error {
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(255, 1, 1));
+  margin-bottom: 10px;
+}
+
+.headLine{
+  margin:5px 0px;
+  width: 90%;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media  screen and  (max-width:600px){
+  .imgContainer{
+    display: none;
+  }
+  .btnLogin{
+    width: 90%;
+  }
+  .inputContainer{
+    width:100%
+  }
+  .loginForm{
+    width: 80%;
+  }
+  
+}
+@media  screen and (min-width:601px) and (max-width:768px){
+  .imgContainer{
+    width:40%
+  }
+  .btnLogin{
+    width: 60%;
+  }
+  .inputContainer{
+    width:70%
+  }
+  .loginForm{
+    width: 60%;
+  }
+  
+}
+@media  screen and (min-width:768px) and (max-width:1024px){
+  .imgContainer{
+    width:50%
+  }
+  .btnLogin{
+    width: 60%;
+  }
+  .inputContainer{
+    width:80%
+  }
+  .loginForm{
+    width: 60%;
+  }
+  
+}

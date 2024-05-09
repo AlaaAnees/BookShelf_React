@@ -1,0 +1,24 @@
+footer img {
+  width: 134px;
+  height: 115px;
+}
+.subscription-input {
+  flex-grow: 1;
+  margin-right: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.subscription-input:focus {
+  border: none !important;
+  outline: none;
+  color: #651c7d;
+}
+@media (max-width: 576px) {
+  .subscription-input {
+    padding: 0px 8px;
+    border-radius: 7px;
+  }
+}
