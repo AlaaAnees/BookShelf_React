@@ -147,7 +147,7 @@ const Home = () => {
               <Link to={"book/" + books[0]?._id}>
                 <img
                   className="imgOmar"
-                  src="./../../public/Icons/more.png"
+                  src="./Icons/more.png"
                   style={{
                     maxWidth: "46px",
                     maxHeight: "46px",
@@ -216,7 +216,7 @@ const Home = () => {
               <Link to={"book/" + books[1]?._id}>
                 <img
                   className="imgOmar"
-                  src="./../../public/Icons/more.png"
+                  src="./Icons/more.png"
                   style={{
                     maxWidth: "46px",
                     maxHeight: "46px",
@@ -285,7 +285,7 @@ const Home = () => {
               <Link to={"book/" + books[2]?._id}>
                 <img
                   className="imgOmar"
-                  src="./../../public/Icons/more.png"
+                  src="./Icons/more.png"
                   style={{
                     maxWidth: "46px",
                     maxHeight: "46px",
@@ -354,7 +354,7 @@ const Home = () => {
               <Link to={"book/" + books[3]?._id}>
                 <img
                   className="imgOmar"
-                  src="./../../public/Icons/more.png"
+                  src="./Icons/more.png"
                   style={{
                     maxWidth: "46px",
                     maxHeight: "46px",
@@ -423,7 +423,7 @@ const Home = () => {
               <Link to={"book/" + books[4]?._id}>
                 <img
                   className="imgOmar"
-                  src="./../../public/Icons/more.png"
+                  src="./Icons/more.png"
                   style={{
                     maxWidth: "46px",
                     maxHeight: "46px",
@@ -474,7 +474,7 @@ const Home = () => {
         <div className="content my-3 w-75 d-flex   flex-column  flex-lg-row justify-content-lg-between align-items-center justify-content-center  ">
           <div className="feature col-12  col-md-3 ">
             <div className="icon my-4">
-              <img className="imgOmar" src="public/Icons/on-time.png" />
+              <img className="imgOmar" src="./Icons/on-time.png" />
             </div>
             <h5 className="my-3">Quick Delivery</h5>
             <p style={{ color: "gray", Opacity: "30%" }}>
@@ -484,7 +484,7 @@ const Home = () => {
           </div>
           <div className="feature col-12  col-md-3 ">
             <div className="icon my-4">
-              <img className="imgOmar" src="public/Icons/credit-card.png" />
+              <img className="imgOmar" src="./Icons/credit-card.png" />
             </div>
             <h5 className="my-3">Secure Payment</h5>
             <p style={{ color: "gray", Opacity: "30%" }}>
@@ -494,7 +494,7 @@ const Home = () => {
           </div>
           <div className="feature col-12  col-md-3">
             <div className="icon my-4">
-              <img className="imgOmar" src="public/Icons/exclusive.png" />
+              <img className="imgOmar" src="./Icons/exclusive.png" />
             </div>
             <h5 className="my-3">Best Quality</h5>
             <p style={{ color: "gray", Opacity: "30%" }}>
@@ -504,7 +504,7 @@ const Home = () => {
           </div>
           <div className="feature col-12  col-md-3">
             <div className="icon my-4">
-              <img className="imgOmar" src="public/Icons/protection.png" />
+              <img className="imgOmar" src="./Icons/protection.png" />
             </div>
             <h5 className="my-3">Return Guarantee</h5>
             <p style={{ color: "gray", Opacity: "30%" }}>
@@ -565,7 +565,7 @@ const Home = () => {
                 >
                   <img
                     className="imgOmar"
-                    src="./../../public/Icons/star.png"
+                    src="./Icons/star.png"
                     style={{ width: "18px", height: "18px" }}
                   />
                   <p style={{ fontWeight: "bold" }}>
@@ -642,7 +642,7 @@ const Home = () => {
                 >
                   <img
                     className="imgOmar"
-                    src="./../../public/Icons/star.png"
+                    src="./Icons/star.png"
                     style={{ width: "18px", height: "18px" }}
                   />
                   <p style={{ fontWeight: "bold" }}>
@@ -720,7 +720,7 @@ const Home = () => {
                 >
                   <img
                     className="imgOmar"
-                    src="./../../public/Icons/star.png"
+                    src="./Icons/star.png"
                     style={{ width: "18px", height: "18px" }}
                   />
                   <p style={{ fontWeight: "bold" }}>
@@ -798,7 +798,7 @@ const Home = () => {
                 >
                   <img
                     className="imgOmar"
-                    src="./../../public/Icons/star.png"
+                    src="./Icons/star.png"
                     style={{ width: "18px", height: "18px" }}
                   />
                   <p style={{ fontWeight: "bold" }}>
@@ -943,7 +943,7 @@ const Home = () => {
                   >
                     <img
                       className="me-2 imgOmar"
-                      src="./../../public/Icons/shopping-cart (2).png"
+                      src="./Icons/shopping-cart (2).png"
                       style={{ width: "25px", height: "23px" }}
                     ></img>
                     Add to cart
@@ -960,7 +960,7 @@ const Home = () => {
                     >
                       <img
                         className="imgOmar"
-                        src="./../../public/Icons/more2.png"
+                        src="./Icons/more2.png"
                         style={{ width: "25px", height: "25px" }}
                       ></img>
                     </ButtonMui>
@@ -1045,7 +1045,7 @@ const Home = () => {
                   >
                     <img
                       className="me-2 imgOmar"
-                      src="./../../public/Icons/shopping-cart (2).png"
+                      src="./Icons/shopping-cart (2).png"
                       style={{ width: "25px", height: "23px" }}
                     ></img>
                     Add to cart
@@ -1062,7 +1062,7 @@ const Home = () => {
                     >
                       <img
                         className="imgOmar"
-                        src="./../../public/Icons/more2.png"
+                        src="./Icons/more2.png"
                         style={{ width: "25px", height: "25px" }}
                       ></img>
                     </ButtonMui>
@@ -1149,7 +1149,7 @@ const Home = () => {
                   >
                     <img
                       className="me-2 imgOmar"
-                      src="./../../public/Icons/shopping-cart (2).png"
+                      src="./Icons/shopping-cart (2).png"
                       style={{ width: "25px", height: "23px" }}
                     ></img>
                     Add to cart
@@ -1166,7 +1166,7 @@ const Home = () => {
                     >
                       <img
                         className="imgOmar"
-                        src="./../../public/Icons/more2.png"
+                        src="./Icons/more2.png"
                         style={{ width: "25px", height: "25px" }}
                       ></img>
                     </ButtonMui>
@@ -1251,7 +1251,7 @@ const Home = () => {
                   >
                     <img
                       className="me-2 imgOmar"
-                      src="./../../public/Icons/shopping-cart (2).png"
+                      src="./Icons/shopping-cart (2).png"
                       style={{ width: "25px", height: "23px" }}
                     ></img>
                     Add to cart
@@ -1268,7 +1268,7 @@ const Home = () => {
                     >
                       <img
                         className="imgOmar"
-                        src="./../../public/Icons/more2.png"
+                        src="./Icons/more2.png"
                         style={{ width: "25px", height: "25px" }}
                       ></img>
                     </ButtonMui>
