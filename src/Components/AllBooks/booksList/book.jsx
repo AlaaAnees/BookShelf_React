@@ -8,7 +8,7 @@ import classes from "./book.module.css";
 import api from "../../../Interceptors/Auth";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../../Contexts/CartContext";
-import { BookContext } from "../../../context/BookContext";
+import { BookContext } from "../../../Contexts/BookContext";
 const Book = (props) => {
   const [showIcons, setShowIcons] = useState(false);
   const [isAddedToCart, setIsAddedToCart] = useState(false);

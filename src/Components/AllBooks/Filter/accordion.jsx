@@ -11,7 +11,7 @@ import {
   Button,
 } from "@mui/material";
 import { useContext, useState } from "react";
-import { BookContext } from "../../../context/BookContext";
+import { BookContext } from "../../../Contexts/BookContext";
 import BubbleLoading from "../../staticComponents/bubbleLoading";
 import classes from "./accordion.module.css";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -27,27 +27,26 @@ export default function CustomAccordion() {
     checkedCategory,
     setCheckedCategory,
     fetchDataByCategory,
-  
+
     setSearch,
-    fetchData
-  
+    fetchData,
   } = useContext(BookContext);
 
   const [showAllCategories] = useState(false);
   const [showAllAuthors] = useState(false);
   const [numDisplayedCategories, setNumDisplayedCategories] = useState(10);
   const [numDisplayedAuthors, setNumDisplayedAuthors] = useState(10);
-  // 
+  //
   const handleClearFilters = () => {
-    setCheckedAuthors('');
-    setCheckedCategory(''); 
-    setSearch('');
+    setCheckedAuthors("");
+    setCheckedCategory("");
+    setSearch("");
     setCurrPage(1);
-    setNumDisplayedCategories(10); 
+    setNumDisplayedCategories(10);
     setNumDisplayedAuthors(10);
-    fetchData()
+    fetchData();
   };
- 
+
   const handleCategoryChange = async (event) => {
     const selectedCategory = event.target.value;
     setCheckedCategory(selectedCategory);
@@ -65,34 +64,35 @@ export default function CustomAccordion() {
     ? categories
     : categories.slice(0, numDisplayedCategories);
 
-    const displayedAuthors = showAllAuthors
+  const displayedAuthors = showAllAuthors
     ? authors
     : authors.slice(0, numDisplayedAuthors);
   return (
     <div>
-     
-           <Button
-                variant="outlined"
-                onClick={handleClearFilters}
-                sx={{
-                    color: '#5b067d',
-                    borderColor: '#5b067d', 
-                    '&:hover': {
-                        backgroundColor: '#5b067d', 
-                        color: 'white', 
-                        borderColor: '#5b067d',
-                    },
-                }}
-            >
-                <span className={classes.color}>Clear Filters</span>
-            </Button>
+      <Button
+        variant="outlined"
+        onClick={handleClearFilters}
+        sx={{
+          color: "#5b067d",
+          borderColor: "#5b067d",
+          "&:hover": {
+            backgroundColor: "#5b067d",
+            color: "white",
+            borderColor: "#5b067d",
+          },
+        }}
+      >
+        <span className={classes.color}>Clear Filters</span>
+      </Button>
       <Accordion
         elevation={0}
         sx={{ backgroundColor: "transparent", border: "none" }}
         defaultExpanded
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: '#ac62c3', fontWeight:'bold'}} />}
+          expandIcon={
+            <ExpandMoreIcon sx={{ color: "#ac62c3", fontWeight: "bold" }} />
+          }
           aria-controls="panel1-content"
           id="panel1-header"
           sx={{
@@ -118,41 +118,43 @@ export default function CustomAccordion() {
               onChange={handleCategoryChange}
             >
               {displayedCategories.map((option, index) => (
-          <FormControlLabel
-          key={index}
-          value={option}
-          control={
-            <Radio
-              sx={{
-                "&, &.Mui-checked": {
-                  color: "#5b067d",
-                },
-                "&:not(.Mui-checked)": {
-                  color: "black",
-                },
-              }}
-            />
-          }
-          label={option}
-          checked={checkedCategory === option} // Update this line
-        />
+                <FormControlLabel
+                  key={index}
+                  value={option}
+                  control={
+                    <Radio
+                      sx={{
+                        "&, &.Mui-checked": {
+                          color: "#5b067d",
+                        },
+                        "&:not(.Mui-checked)": {
+                          color: "black",
+                        },
+                      }}
+                    />
+                  }
+                  label={option}
+                  checked={checkedCategory === option} // Update this line
+                />
               ))}
             </RadioGroup>
           </FormControl>
-          {categories.length > numDisplayedCategories && !showAllCategories ? ( 
-                <Button variant="text" onClick={() => setNumDisplayedCategories(prevNum => prevNum + 10)}>
-               <div  className={classes.color}>
-                   <AddIcon /> Load More
-                 </div>
+          {categories.length > numDisplayedCategories && !showAllCategories ? (
+            <Button
+              variant="text"
+              onClick={() =>
+                setNumDisplayedCategories((prevNum) => prevNum + 10)
+              }
+            >
+              <div className={classes.color}>
+                <AddIcon /> Load More
+              </div>
             </Button>
-           
-          
-          ):(
+          ) : (
             <Button onClick={() => setNumDisplayedCategories(10)}>
-
-            <div  className={classes.color}  >
-                  <RemoveIcon /> Load Less
-                 </div>
+              <div className={classes.color}>
+                <RemoveIcon /> Load Less
+              </div>
             </Button>
           )}
         </AccordionDetails>
@@ -163,7 +165,9 @@ export default function CustomAccordion() {
         defaultExpanded
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: '#ac62c3', fontWeight:'bold'}} />}
+          expandIcon={
+            <ExpandMoreIcon sx={{ color: "#ac62c3", fontWeight: "bold" }} />
+          }
           aria-controls="panel2-content"
           id="panel2-header"
           sx={{
@@ -189,41 +193,41 @@ export default function CustomAccordion() {
               onChange={handleAuthorChange}
             >
               {displayedAuthors.map((option, index) => (
-              <FormControlLabel
-              key={index}
-              value={option}
-              control={
-                <Radio
-                  sx={{
-                    "&, &.Mui-checked": {
-                      color: "#5b067d",
-                    },
-                    "&:not(.Mui-checked)": {
-                      color: "black",
-                    },
-                  }}
+                <FormControlLabel
+                  key={index}
+                  value={option}
+                  control={
+                    <Radio
+                      sx={{
+                        "&, &.Mui-checked": {
+                          color: "#5b067d",
+                        },
+                        "&:not(.Mui-checked)": {
+                          color: "black",
+                        },
+                      }}
+                    />
+                  }
+                  label={option}
+                  checked={checkedAuthors === option} // Update this line
                 />
-              }
-              label={option}
-              checked={checkedAuthors === option} // Update this line
-            />
               ))}
             </RadioGroup>
           </FormControl>
-       {authors.length > numDisplayedAuthors && !showAllAuthors ? ( 
-                <Button variant="text" onClick={() => setNumDisplayedAuthors(prevNum => prevNum + 10)}>
-               <div  className={classes.color}>
-                   <AddIcon /> Load More
-                 </div>
+          {authors.length > numDisplayedAuthors && !showAllAuthors ? (
+            <Button
+              variant="text"
+              onClick={() => setNumDisplayedAuthors((prevNum) => prevNum + 10)}
+            >
+              <div className={classes.color}>
+                <AddIcon /> Load More
+              </div>
             </Button>
-           
-          
-          ):(
+          ) : (
             <Button onClick={() => setNumDisplayedAuthors(10)}>
-
-            <div  className={classes.color}  >
-                  <RemoveIcon /> Load Less
-                 </div>
+              <div className={classes.color}>
+                <RemoveIcon /> Load Less
+              </div>
             </Button>
           )}
         </AccordionDetails>

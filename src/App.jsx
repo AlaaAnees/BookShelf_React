@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import { AppProvider } from "./Contexts/appContext";
 import AllBooksPage from "./Pages/allBooks";
-import BookContextProvider from "./context/BookContext";
+import BookContextProvider from "./Contexts/BookContext";
 import ProfilePage from "./Pages/profile";
 import Join from "./Pages/Join.jsx";
 import SystemLayout from "./Layout/SystemLayout.jsx";
@@ -67,10 +67,10 @@ function App() {
                     <Route path="/home" element={<Home></Home>}></Route>
 
                     <Route path="/cart" element={<CartPage></CartPage>}></Route>
-                     <Route
+                    <Route
                       path="/allBooks"
                       element={<AllBooksPage></AllBooksPage>}
-                    ></Route> 
+                    ></Route>
                     <Route path="/book/:id" element={<BookDetails />}></Route>
                     <Route
                       path="/profile"

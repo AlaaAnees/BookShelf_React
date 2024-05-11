@@ -3,7 +3,7 @@ import Qty from "./Qty";
 import BtnBg from "../../Generic-components/BtnBg";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../../Contexts/CartContext";
-import { BookContext } from "../../../context/BookContext";
+import { BookContext } from "../../../Contexts/BookContext";
 import { useNavigate } from "react-router-dom";
 
 function BookInfo({ book }) {

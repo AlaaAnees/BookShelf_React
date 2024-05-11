@@ -1,11 +1,12 @@
-import Pagination from '@mui/material/Pagination';
+import Pagination from "@mui/material/Pagination";
 
-import { useContext } from 'react';
-import { BookContext } from '../../../context/BookContext';
-import './pagination.css';
+import { useContext } from "react";
+import { BookContext } from "../../../Contexts/BookContext";
+import "./pagination.css";
 
 export default function PaginationOutlined() {
-  const { booksPages, booksPerPage, setCurrPage, currPage } = useContext(BookContext);
+  const { booksPages, booksPerPage, setCurrPage, currPage } =
+    useContext(BookContext);
 
   const totalPages = Math.ceil(booksPages?.length / booksPerPage);
 
@@ -16,8 +17,16 @@ export default function PaginationOutlined() {
 
   return (
     <div className="pagination-container">
-        <Pagination sx={{marginBottom:'20px'}} size='large' variant="outlined"  shape="rounded"  count={totalPages} page={currPage} onChange={handlePageChange} color="secondary" />
-
+      <Pagination
+        sx={{ marginBottom: "20px" }}
+        size="large"
+        variant="outlined"
+        shape="rounded"
+        count={totalPages}
+        page={currPage}
+        onChange={handlePageChange}
+        color="secondary"
+      />
     </div>
   );
 }

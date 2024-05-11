@@ -18,7 +18,7 @@ import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../Contexts/CartContext";
 import { grey } from "@mui/material/colors";
 
-import { BookContext } from "../../context/BookContext";
+import { BookContext } from "../../Contexts/BookContext";
 import FavIcon from "./FavIcon";
 
 const routes = [
